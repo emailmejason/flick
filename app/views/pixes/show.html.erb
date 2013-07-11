@@ -1,0 +1,24 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Name:</b>
+  <%= @pix.name %>
+</p>
+
+<p>
+  <b>Category:</b>
+  <%= @pix.category %>
+</p>
+
+<p>
+  <%= image_tag @pix.image %>
+</p>
+
+<p>
+  <b>Description:</b>
+  <%= @pix.description %>
+</p>
+
+
+<%= link_to 'Edit', edit_pix_path(@pix) %> |
+<%= link_to 'Back', pixes_path %>

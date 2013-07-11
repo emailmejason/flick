@@ -1,0 +1,26 @@
+development:
+  adapter: postgresql
+  encoding: unicode
+  database: flick_development
+  pool: 5
+  username: admin
+  password:
+  host: localhost
+
+test:
+  adapter: postgresql
+  encoding: unicode
+  database: flick_test
+  pool: 5
+  username: admin
+  password:
+  host: localhost
+
+production:
+  adapter: postgresql
+  encoding: unicode
+  database: flick_production
+  pool: 5
+  username: admin
+  password:
+  host: localhost

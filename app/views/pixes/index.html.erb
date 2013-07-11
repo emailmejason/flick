@@ -1,0 +1,29 @@
+<h1>Listing pixes</h1>
+
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Category</th>
+    <th>Image</th>
+    <th>Description</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @pixes.each do |pix| %>
+  <tr>
+    <td><%= pix.name %></td>
+    <td><%= pix.category %></td>
+    <td><%= pix.image %></td>
+    <td><%= pix.description %></td>
+    <td><%= link_to 'Show', pix %></td>
+    <td><%= link_to 'Edit', edit_pix_path(pix) %></td>
+    <td><%= link_to 'Destroy', pix, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Pix', new_pix_path %>
