@@ -1,7 +1,7 @@
 development:
   adapter: postgresql
   encoding: unicode
-  database: flick_development
+  database: flick1_development
   pool: 5
   username: admin
   password:
@@ -10,7 +10,7 @@ development:
 test:
   adapter: postgresql
   encoding: unicode
-  database: flick_test
+  database: flick1_test
   pool: 5
   username: admin
   password:
@@ -19,7 +19,7 @@ test:
 production:
   adapter: postgresql
   encoding: unicode
-  database: flick_production
+  database: flick1_production
   pool: 5
   username: admin
   password:
